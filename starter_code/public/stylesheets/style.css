@@ -5,29 +5,23 @@ body {
   color: white;
   background-image: url("../images/cinema.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 a {
   color: #00B7FF;
   text-decoration: none;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
-// Homepage & Standard
 .container {
   position: absolute;
   left: 50%;
   top: 20%;
   font-weight: bolder;
   width: 30%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 .container h1 {
-  font-size: 4em;
-
-}
+  font-size: 4em; }
 
 .btn {
   border-color: red;
@@ -36,19 +30,15 @@ a {
   font-size: 16px;
   background-color: darkred;
   color: white;
-  padding: 5px 15px;
-}
+  padding: 5px 15px; }
 
-// Celeblist
 .search-form {
   display: flex;
-  align-items: center;
-}
+  align-items: center; }
 
 .search-form input,
 h2 {
-  margin: 5px;
-}
+  margin: 5px; }
 
 .search-form input,
 button {
@@ -58,23 +48,19 @@ button {
   font-size: 16px;
   background-color: darkred;
   color: white;
-  padding: 2px 15px;
-}
+  padding: 2px 15px; }
 
 .celebs {
-  margin-top: 25px;
-}
+  margin-top: 25px; }
 
 .celeb {
   display: flex;
-  flex-wrap: nowrap;
-}
+  flex-wrap: nowrap; }
 
 .celeb a {
   color: white;
   flex: 1;
-  margin-right: 0;
-}
+  margin-right: 0; }
 
 .celeb button {
   border: 1px solid transparent;
@@ -82,74 +68,59 @@ button {
   color: #00B7FF;
   padding: 2px 5px;
   font-size: 10px;
-  margin: 1px;
-}
+  margin: 1px; }
 
 .celeb-name {
   list-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 .buttons {
-  display: flex;
-}
-
-// Create-fields
+  display: flex; }
 
 .create-fields {
   display: flex;
   flex-direction: column;
-  width: 15vw;
-
-}
+  width: 15vw; }
 
 .create-fields input {
   margin: 2px;
   font-size: 15px;
   border-radius: 5px;
   border: 1px solid lightgrey;
-  padding: 2px 15px;
-}
+  padding: 2px 15px; }
 
 .submit-button {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
-
-// Movies
 .movie button {
   border: 1px solid transparent;
   background-color: transparent;
   color: #00B7FF;
   padding: 2px 5px;
   font-size: 10px;
-  margin: 1px;
-}
+  margin: 1px; }
 
 .movies {
   display: flex;
   width: 300px;
   flex-wrap: wrap;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
 .movie {
-  width: 4vw;
-}
+  width: 4vw; }
 
 .movie-name {
   list-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 .movielist {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .card {
   margin: 20px;
   color: black;
-  text-align: center;
-}
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Edit the Celebrity</h2>
+  <form action="/celebrities/{{celeb.id}}" method="POST">
+    <div class="create-fields">
+      <p>Name<input type="text" name="name" placeholder="{{celeb.name}}" value="{{celeb.name}}"></p>
+      <p>Occupation<input type="text" name="occupation" placeholder="{{celeb.occupation}}" value="{{celeb.occupation}}"></p>
+      <p>Catch phrase<input type="text" name="catchPhrase" placeholder="{{celeb.catchPhrase}}" value="{{celeb.catchPhrase}}"></p>
+    </div>
+    <button class="submit-button">submit</button>
+  </form>
+</div>

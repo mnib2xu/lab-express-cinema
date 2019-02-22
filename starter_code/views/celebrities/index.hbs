@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Celebrities</h1>
+  <form class="search-form" action="/search" method="POST">
+    <h2>Search:</h2>
+    <input type="text" name="search" placeholder="Name">
+    <button>Search</button>
+  </form>
+  <a class="create" href="/celebrities/new"> Create a new fucker (+)</a>
+
+  <div class="celebs">
+    {{#each celebs}}
+    <div class="celeb">
+      <a href="/celebrities/details?id={{id}}">
+        <li class="celeb-name">{{name}}</li>
+      </a>
+      <div class="buttons">
+        <form action="/celebrities/{{id}}/delete" method="POST">
+          <button>
+            Delete
+          </button>
+        </form>
+        <form action="/celebrities/{{id}}/edit" method="GET">
+          <button>
+            Edit
+          </button>
+        </form>
+      </div>
+    </div>
+    {{/each}}
+  </div>

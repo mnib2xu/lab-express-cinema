@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Movies</h1>
+  <form class="search-form" action="/search" method="POST">
+    <h2>Search:</h2>
+    <input type="text" name="search" placeholder="Name">
+    <button>Search</button>
+  </form>
+  <a class="create" href="/movies/new"> Create a new movie (+)</a>
+
+  <div class="movies">
+    {{#each movies}}
+    <div class="movie">
+      <a href="/movies/details?id={{id}}">
+        <li class="movie-name">{{title}}</li>
+        <img src="{{image}}" alt="">
+      </a>
+      <div class="buttons">
+        <form action="/movies/{{id}}/delete" method="POST">
+          <button>
+            Delete
+          </button>
+        </form>
+        <form action="/movies/{{id}}/edit" method="GET">
+          <button>
+            Edit
+          </button>
+        </form>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
